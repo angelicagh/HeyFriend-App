@@ -8,8 +8,7 @@
 ## 🌐 Demo en vivo
 
 Puedes probar la aplicación directamente en GitHub Pages:  
-[👉 Abrir HeyFriend](https://tu-usuario.github.io/heyfriend)  
-*(Reemplaza con tu enlace real de GitHub Pages)*
+[👉 Abrir HeyFriend](https://tu-usuario.github.io/heyfriend)
 
 ---
 
@@ -32,7 +31,8 @@ Puedes probar la aplicación directamente en GitHub Pages:
 - **SCSS**
 - **JavaScript**  
 - **Vite**
-La aplicación utiliza `fetch()` para obtener datos y `localStorage` para guardar y recuperar la información.
+- **Fetch API**  
+- **Local Storage**
 
 ---
 
@@ -49,44 +49,3 @@ La aplicación utiliza `fetch()` para obtener datos y `localStorage` para guarda
 #### 3. Despliega la app 
 
 `npm run dev`
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Pasos para publicar el proyecto en GitHub Pages:
-
-Para generar tu página para producción ejecuta el comando:
-
-```bash
-npm run build
-```
-
-Y a continuación:
-
-1. Sube a tu repo la carpeta `docs/` que se te acaba de generar.
-1. Entra en la pestaña `settings` de tu repo.
-1. Y en el apartado de GitHub Pages activa la opción **master branch /docs folder**.
-1. Y ya estaría!!!
-
-Además, los comandos:
-
-```bash
-npm run push-docs
-```
-o
-
-```bash
-npm run deploy
-```
-ld
-
-
