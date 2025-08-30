@@ -126,7 +126,7 @@ const handleClickRemove = () => {
       //poner todos los corazones blancos
       const allHeartImages = document.querySelectorAll(".js_heart");
     allHeartImages.forEach(img => {
-    img.src = "/images/blanco.png";
+    img.src = "images/blanco.png";//IMPORTANTE: USAR RUTAS ABSOLUTAS PARA QUE LAS IMG SE VEAN EN CHROME EN LA WEB PUBLICADA
   });             
   renderFriends();        
 }
