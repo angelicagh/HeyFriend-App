@@ -17,9 +17,9 @@ let friends = [];//7º array que se va a rellenar con los users marcados como am
 const renderList = () => {
     let html = "";
     for (let item of users) {
-         const heartSrc = "/images/blanco.png"; // valor por defecto
+         const heartSrc = "images/blanco.png"; // valor por defecto
             if (item.isFriend === true) {
-                heartSrc = "/images/rojo.png";
+                heartSrc = "images/rojo.png";
             } 
     html += `<li class="user_container">
     <button class="button js_button" id="${item.login.uuid}">
@@ -46,10 +46,10 @@ const renderFriends = () => {
     let html = "";
     for (let item of friends) {
         
-    let heartSrc = "/images/blanco.png"; //color del corazón por defecto
+    let heartSrc = "images/blanco.png"; //color del corazón por defecto
 
         if (item.isFriend === true) {
-            heartSrc = "/images/rojo.png";
+            heartSrc = "images/rojo.png";
         }
 
         html += `<li class="user_container_friend">
@@ -78,9 +78,9 @@ const handleClick = (ev) => {
 
         // alternar entre corazón blanco y rojo
         if (heartImg.src.includes("blanco.png")) {
-            heartImg.src = "/images/rojo.png";
+            heartImg.src = "images/rojo.png";
         } else {
-            heartImg.src = "/images/blanco.png";
+            heartImg.src = "images/blanco.png";
         }
 
         //8º añadir a lista de amigos
