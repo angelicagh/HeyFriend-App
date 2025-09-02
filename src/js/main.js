@@ -182,3 +182,44 @@ removeBtn.addEventListener("click", handleClickRemove);
         buttonClicked.classList.add("button");
     }  
 } */
+
+
+
+//PARAMETRIZAR
+
+/* //le paso los parámetros que voy a utilizar, en este caso dónde se va a pintar y qué se va a pintar. estos nombres me los invento
+//cuando llamo a la función es cuando le paso los nombres reales
+//forma en que funciona: por posición, es decir, listHTML sería posición 1 y listUsers sería posición 2
+//cuando llame a la función renderList2(userList, users), le estoy diciendo que el parámetro de la posición 1 es userList y el de la posición 2 es users, que son mis nombres reales
+
+const renderList2 = (listHTML, listUsers) => { 
+    let html = "";
+    for (let item of listUsers) {//renombrar para que aquí sea el noimbre del parámetro (listUsers)
+         const heartSrc = "images/blanco.png"; // valor por defecto
+            if (item.isFriend === true) {
+                heartSrc = "images/rojo.png";
+            } 
+    html += `<li class="user_container">
+    <button class="button js_button" id="${item.login.uuid}">
+    <img class="button_icon js_heart" src="${heartSrc}" alt="Like"/>
+    </button>
+    <img class="user_img" src=${item.picture.large} alt="Foto usuario">
+    <h2 class="user_name">${item.name.first} ${item.name.last}</h2>
+    <p class="user_country">${item.location.country}</p>
+    <p class="user_username">@${item.login.username}</p>
+    </li>`
+    }
+    //renombrar para que aquí sea el noimbre del parámetro (listHTML)
+    listHTML.innerHTML = html;
+
+    //5º cuando los usuarios están pintados, es cuando hay que saber a quién se le da clic
+    //con querySelectorAll traigo todos los botones en un listado, por eso hago un bucle for
+    const allButtons = document.querySelectorAll(".js_button");
+    for(let button of allButtons) {
+        button.addEventListener("click", handleClick);//listener sobre cada botón
+    }
+}
+
+//llamo a la función renderList2 dos veces y le paso parámetros diferentes
+renderList2(userList, users)
+renderList2(friendsList, friends) */
