@@ -185,7 +185,7 @@ removeBtn.addEventListener("click", handleClickRemove);
 
 
 
-//PARAMETRIZAR
+//PARAMETRIZAR //si tuviera los mismos estilos podría parametrizarla para reutilizar código y que se vea más limpio
 
 /* //le paso los parámetros que voy a utilizar, en este caso dónde se va a pintar y qué se va a pintar. estos nombres me los invento
 //cuando llamo a la función es cuando le paso los nombres reales
@@ -221,5 +221,5 @@ const renderList2 = (listHTML, listUsers) => {
 }
 
 //llamo a la función renderList2 dos veces y le paso parámetros diferentes
-renderList2(userList, users)
-renderList2(friendsList, friends) */
+renderList2(userList, users)//con estos parámetros me pinta el listado de usuarios
+renderList2(friendsList, friends)//con estos parámetros me pinta el listado de amigos */
